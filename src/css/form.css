@@ -1,4 +1,4 @@
-.js-form {
+.form {
   display: block;
   display: flex;
   justify-content: center;
@@ -10,8 +10,8 @@
   gap: 8px;
 }
 
-.js-form input,
-.js-form button {
+.form input,
+.form button {
   font-family: inherit;
   font-size: inherit;
   font-weight: inherit;
@@ -42,7 +42,7 @@
   border-color: rgb(78, 117, 255);
 }
 
-.js-form button {
+.form button {
   color: rgb(255, 255, 255);
   font-weight: 500;
 
@@ -55,8 +55,8 @@
   transition: background-color 250ms ease-in-out;
 }
 
-.js-form button:hover,
-.js-form button:focus {
+.form button:hover,
+.form button:focus {
   background-color: rgb(108, 140, 255);
 }
 
@@ -74,7 +74,7 @@
   overflow: hidden;
 }
 
-.js-gallery {
+.gallery {
   display: flex;
   flex-wrap: wrap;
   align-items: center;
@@ -84,9 +84,12 @@
   gap: 24px;
 }
 
-.photo-card {
+.gallery-element {
   width: calc((100% - 48px) / 3);
   height: 200px;
+}
+
+.photo-card {
   display: flex;
   flex-direction: column;
   overflow: hidden;

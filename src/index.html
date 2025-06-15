@@ -15,7 +15,7 @@
   </head>
   <body>
     <div class="container">
-      <form class="js-form" name="image-search" autocomplete="off">
+      <form class="form" name="image-search" autocomplete="off">
         <label for="search" class="visually-hidden"></label>
         <input
           type="text"
@@ -25,9 +25,9 @@
         />
         <button type="submit">Search</button>
       </form>
-      <div class="loader is-hidden"></div>
+      <span class="loader is-hidden"></span>
 
-      <div class="js-gallery"></div>
+      <ul class="gallery"></ul>
     </div>
     <script type="module" src="./main.js"></script>
   </body>

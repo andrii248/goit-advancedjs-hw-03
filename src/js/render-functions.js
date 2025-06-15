@@ -6,14 +6,15 @@ let lightbox;
 export function renderGalley(images, galleryElement) {
   const markup = images
     .map(image => {
-      return `<a href="${image.largeImageURL}" class="photo-card">
+      return `<li class="gallery-element">
+      <a href="${image.largeImageURL}" class="photo-card">
         <div class="image-wrapper">
-         <img
-          class="gallery-image"
-          src="${image.webformatURL}"
-          alt="${image.tags}"
-          loading="lazy"
-        />
+          <img
+            class="gallery-image"
+            src="${image.webformatURL}"
+            alt="${image.tags}"
+            loading="lazy"
+          />
         </div>
         <div class="info">
           <p class="info-item">
@@ -30,6 +31,7 @@ export function renderGalley(images, galleryElement) {
           </p>
         </div>
       </a>
+    </li>
         `;
     })
     .join('');
@@ -37,7 +39,7 @@ export function renderGalley(images, galleryElement) {
   galleryElement.insertAdjacentHTML('beforeend', markup);
 
   if (!lightbox) {
-    lightbox = new SimpleLightbox('.js-gallery a', {
+    lightbox = new SimpleLightbox('.gallery a', {
       captionData: 'alt',
       captionDelay: 250,
     });

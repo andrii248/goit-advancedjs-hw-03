@@ -4,8 +4,8 @@ import { fetchImages } from './js/pixabay-api';
 import { clearGallery, renderGalley } from './js/render-functions';
 
 const refs = {
-  searchForm: document.querySelector('.js-form'),
-  gallery: document.querySelector('.js-gallery'),
+  searchForm: document.querySelector('.form'),
+  gallery: document.querySelector('.gallery'),
   loader: document.querySelector('.loader'),
 };
 
