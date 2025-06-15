@@ -22,6 +22,12 @@ body {
   min-width: 100vw;
   min-height: 100vh;
   margin: 0;
+
+  font-family: Montserrat, sans-serif;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1.5;
+  letter-spacing: 0.04em;
 }
 
 main {
@@ -29,4 +35,10 @@ main {
 }
 main:has(.back-link) {
   text-align: center;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
 }
